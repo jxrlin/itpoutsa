@@ -28,6 +28,17 @@
       "assets/layers-BWBAp2CZ.png",
       "assets/layers-2x-Bpkbi35X.png",
       "assets/marker-icon-hN30_KVU.png"
-    ]
+    ],
+    "resources/css/app.css": {
+      "file": "assets/app-CjRiPLFz.css",
+      "src": "resources/css/app.css",
+      "isEntry": true
+    },
+    "resources/js/app.js": {
+      "file": "assets/app-BjCBnTiP.js",
+      "name": "app",
+      "src": "resources/js/app.js",
+      "isEntry": true
+    }
   }
 }
