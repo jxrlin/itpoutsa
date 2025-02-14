@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('partner_shops', function (Blueprint $table) {
-            $table->id('partner_shops_id');
+            $table->id('partner_shops_id'); // BIGINT by default in MySQL
             $table->string('partner_shops_name', 255);
             $table->string('partner_shops_email', 30)->nullable();
             $table->string('partner_shops_password', 255)->nullable();

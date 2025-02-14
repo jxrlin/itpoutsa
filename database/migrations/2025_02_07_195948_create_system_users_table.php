@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('system_users', function (Blueprint $table) {
-            $table->id('system_users_id');
+            $table->id('system_users_id'); // BIGINT by default in MySQL
             $table->string('name', 100);
             $table->enum('role', ['admin', 'warehouse_admin', 'sales_admin', 'finance_admin']);
             $table->string('email', 100)->unique();

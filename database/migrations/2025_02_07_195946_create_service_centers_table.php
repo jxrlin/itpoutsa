@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('service_centers', function (Blueprint $table) {
-            $table->id('center_id');
+            $table->id('center_id'); // BIGINT by default in MySQL
             $table->string('service_center_name', 50);
             $table->string('service_center_address', 50);
             $table->string('service_center_region', 50)->nullable();

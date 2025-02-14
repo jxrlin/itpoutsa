@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sales_invoices', function (Blueprint $table) {
-            $table->id();
+            $table->id(); // BIGINT by default in MySQL
             $table->date('sale_date');
             $table->string('invoice_no', 255);
             $table->foreignId('partner_shops_id')->constrained('partner_shops', 'partner_shops_id')->onDelete('cascade');
@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('quantity');
             $table->decimal('total_mmk', 15, 2);
             $table->boolean('delivered')->default(0);
-            $table->enum('payment', array('Pending','Paid','Cancel'))->default('Pending');
+            $table->enum('payment', ['Pending', 'Paid', 'Cancel'])->default('Pending');
             $table->boolean('completed')->default(0);
             $table->text('remarks')->nullable();
             $table->timestamps();
