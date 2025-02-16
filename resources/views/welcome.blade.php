@@ -598,7 +598,7 @@
                 <img class="rounded-full size-20" src={{asset('P4.png')}} alt="Avatar">
                 <div class="grow">
                     <h3 class="font-medium text-gray-800 dark:text-neutral-200">
-                        Htoo Thant Naung
+                        Htoo Thet Naung
                     </h3>
                     <p class="text-xs uppercase text-gray-500 dark:text-neutral-500">
                         Full Stack Developer (Laravel & React Map Tracking System)
