@@ -595,7 +595,7 @@
 
         <div class="flex flex-col rounded-xl p-4 md:p-6 bg-white border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700">
             <div class="flex items-center gap-x-4">
-                <img class="rounded-full size-20" src={{asset('p4.png')}} alt="Avatar">
+                <img class="rounded-full size-20" src={{asset('P4.png')}} alt="Avatar">
                 <div class="grow">
                     <h3 class="font-medium text-gray-800 dark:text-neutral-200">
                         Htoo Thant Naung
@@ -634,7 +634,7 @@
 
         <div class="flex flex-col rounded-xl p-4 md:p-6 bg-white border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700">
             <div class="flex items-center gap-x-4">
-                <img class="rounded-full size-20" src={{asset('p3.png')}} alt="Avatar">
+                <img class="rounded-full size-20" src={{asset('P3.png')}} alt="Avatar">
                 <div class="grow">
                     <h3 class="font-medium text-gray-800 dark:text-neutral-200">
                         Zaw Linn Htet
@@ -673,7 +673,7 @@
 
         <div class="flex flex-col rounded-xl p-4 md:p-6 bg-white border border-gray-200 dark:bg-neutral-900 dark:border-neutral-700">
             <div class="flex items-center gap-x-4">
-                <img class="rounded-full size-20" src={{asset('p7.png')}} alt="Avatar">
+                <img class="rounded-full size-20" src={{asset('P7.png')}} alt="Avatar">
                 <div class="grow">
                     <h3 class="font-medium text-gray-800 dark:text-neutral-200">
                         Pyae Linn
