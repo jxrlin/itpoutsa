@@ -163,10 +163,16 @@ class ChartController extends Controller
         $days = $dailySales->pluck('sale_day');
         $salesValuesDay = $dailySales->pluck('daily_sales');
 
-        // Find the peak sales day
         $maxSaleDay = $salesValuesDay->max();
         $maxSaleDayIndex = $salesValuesDay->search($maxSaleDay);
-        $maxSaleDay = $days[$maxSaleDayIndex];
+        
+        // Ensure we have valid data before accessing the array
+        if ($maxSaleDayIndex !== false && $maxSaleDayIndex !== null) {
+            $maxSaleDay = $days[$maxSaleDayIndex];
+        } else {
+            $maxSaleDay = null; // Set to null or a default value
+        }
+        
 
         // Passing the sales data and predictions to the view
         return view('adm_dashboard', [
