@@ -44,10 +44,10 @@
       "assets/app-Byd5j8eO.css"
     ]
   },
-  "resources/js/react/main.tsx": {
+  "resources/js/react/main2.tsx": {
     "file": "assets/main-pezdexEU.js",
     "name": "main",
-    "src": "resources/js/react/main.tsx",
+    "src": "resources/js/react/main2.tsx",
     "isEntry": true,
     "imports": [
       "_MapComponent-BMiDCLon.js"
