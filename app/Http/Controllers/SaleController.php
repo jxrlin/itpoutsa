@@ -15,7 +15,7 @@ class SaleController extends Controller
 
         // Fetch Monthly Sales (Last 12 Months)
         $monthlySales = DB::table('sales_invoices')
-            ->selectRaw("strftime('%Y-%m', sale_date) AS month, SUM(total_mmk) AS total_sales_mmk, COUNT(id) AS total_invoices, SUM(quantity) AS total_quantity")
+            ->selectRaw("DATE_FORMAT(sale_date, '%Y-%m') AS month, SUM(total_mmk) AS total_sales_mmk, COUNT(id) AS total_invoices, SUM(quantity) AS total_quantity")
             ->where('sale_date', '>=', Carbon::now()->subMonths(12)->startOfMonth()->toDateString())
             ->groupBy('month')
             ->orderBy('month', 'DESC')
@@ -86,8 +86,8 @@ class SaleController extends Controller
     public function getMonthlySales()
     {
         $salesData = DB::table('sales_invoices')
-            ->selectRaw('strftime("%Y-%m", sale_date) AS sale_date, SUM(total_mmk) AS total_sales')
-            ->groupBy(DB::raw('strftime("%Y", sale_date)'), DB::raw('strftime("%m", sale_date)'))
+            ->selectRaw('DATE_FORMAT(sale_date, "%Y-%m", ) AS sale_date, SUM(total_mmk) AS total_sales')
+            ->groupBy(DB::raw('DATE_FORMAT(sale_date, "%Y")'), DB::raw('DATE_FORMAT(sale_date, "%m", )'))
             ->orderBy('sale_date', 'desc')
             ->get();
 
