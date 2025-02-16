@@ -104,7 +104,7 @@ $hasDeliveries = SalesInvoice::where('delivered', 1)->exists();
 
     @if($hasDeliveries)
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-        @vite(['resources/js/react/main2.tsx'])
+        @vite(['resources/js/react/main.tsx'])
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {

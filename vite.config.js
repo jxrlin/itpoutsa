@@ -10,7 +10,7 @@ export default defineConfig({
     },
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/js/react/main2.tsx'],
+            input: ['resources/css/app.css', 'resources/js/app.js', 'resources/js/react/main.tsx'],
             refresh: true,
         }),
         react(),
